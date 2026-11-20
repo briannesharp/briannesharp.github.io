@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Stallion cheat sheets: new address</title>
+<script>
+// Send the visitor to the same page at the new address.
+(function () {
+  var base = "https://stallion-cheat-sheets.netlify.app/";
+  var m = location.pathname.match(/^\/cheat-sheets\/(.*)$/);
+  var rest = m ? m[1] : "";
+  if (location.pathname === "/cheat-sheets" || m) {
+    location.replace(base + rest + location.search + location.hash);
+  }
+})();
+</script>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; color: #222; background: #fff; margin: 0; padding: 48px 16px; text-align: center; }
+  a { color: #0037B2; }
+</style>
+</head>
+<body>
+<p>The stallion cheat sheets have moved to a new address.</p>
+<p><a href="https://stallion-cheat-sheets.netlify.app/">https://stallion-cheat-sheets.netlify.app/</a></p>
+</body>
+</html>
